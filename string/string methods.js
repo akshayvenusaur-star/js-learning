@@ -1,34 +1,48 @@
 
- let str="i am developer"
+//  let str="i am developer"
 
- console.log(str.length);
- console.log(str.charAt(5));
- console.log(str.charCodeAt(5));//asci number
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+//  console.log(str.length);
+//  console.log(str.charAt(5));
+//  console.log(str.charCodeAt(5));//asci number
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
 
-console.log(str.trim());
-console.log(str.indexOf("i"));
-console.log(str.lastIndexOf("i"));
-console.log(str.startsWith("i"));
-
-
-console.log(str.endsWith("developer"));
-console.log(str.includes("am"));
-console.log(str.slice(2,4,-1));//accept negative index
-console.log(str.substring(2,4,-1));
-
-let fruits = "apple,mango,orange";
-console.log(fruits.split(","));
+// console.log(str.trim());
+// console.log(str.indexOf("i"));
+// console.log(str.lastIndexOf("i"));
+// console.log(str.startsWith("i"));
 
 
-let str1="helloworld";
-// console.log(str1.replace("world","akshay"));
-console.log(str1.replaceAll("helloworld","developer"));//replace all occurence
+// console.log(str.endsWith("developer"));
+// console.log(str.includes("am"));
+// console.log(str.slice(2,4,-1));//accept negative index
+// console.log(str.substring(2,4,));
+
+// let fruits = "apple,mango,orange";
+// console.log(fruits.split(","));//convet string to array
 
 
-//padstart
-let number = "5";
-console.log(number.padStart(3, "0"));//005
-console.log(number.padEnd(3, "0"));//500
-console.log(number.padStart(3,"str"));
+// let str1="helloworld";
+// // console.log(str1.replace("world","akshay"));
+// console.log(str1.replaceAll("helloworld","developer"));//replace all 
+
+
+// //padstart
+// let number = "5";
+// console.log(number.padStart(3, "0"));//005
+// console.log(number.padEnd(3, "0"));//500
+// console.log(number.padStart(3,"str"));
+
+
+// //indexOf() it will return index of the element if not found it will return -1
+// let fruits = ["Apple", "Mango", "Orange"];
+// console.log(fruits.indexOf("Mango"));
+// console.log(fruits.indexOf("Grapes"));
+
+
+
+//forEach() 
+let num=[10,20,30,40,50]
+num.forEach(num => {
+    console.log(num);
+})
