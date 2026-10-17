@@ -9,14 +9,6 @@ try {
 }
 
 
-try {
-    let age = 20;
-    console.log(age!=20);
-    throw new Error("");
-    
-} catch (error) {
-    console.log("Error handled");//20 ,error handled
-}
 
 
 try {
@@ -25,10 +17,38 @@ try {
         console.log("right age to vote");
         
     }else{
-        throw new Error("");
+        throw new Error("not right age to vote");
         
     }
 } catch (error) {
-    console.log("not right age to vote");
+    console.log(error.message);//not right age to vote
     
+}
+
+
+
+
+
+try {
+    let num = 5;
+
+    if (num < 0) {
+        throw new Error("Number is negative");
+    }
+    console.log("Positive number");
+} catch (error) {
+    console.log(error.message);//number is positive
+}
+
+
+
+try {
+    let username = "";
+
+    if (username === "") {
+        throw new Error("Username is required");
+    }
+    console.log("Login successful");
+} catch (error) {
+    console.log(error.message);//user name required
 }
